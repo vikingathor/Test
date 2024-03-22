@@ -1,0 +1,167 @@
+<!DOCTYPE html> <!--typen av dokument = html -->
+<html lang="sv"> <!--Använder språkkoden som är Svenska -->
+<head>
+<meta charset="UTF-8"> <!--Definerar teckenkodningen som hanterar fflera olika språk och deras olika tecken. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ställer in visningsområdet för mobila enheter -->
+<title> Framsida För Freya Av Viktor Linder </title>
+<link rel="stylesheet" href="Stilför.css">
+
+<style> 
+
+/* Styling för behållaren som styr både Formen och text innehållet */
+.ContainerFormText {
+ display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+align-items: flex-start; /* Gör så att innehållet placeras längst upp */
+width: 80%;
+margin: 0 auto; /*För att kunna centrera innehållet */
+}
+
+/* Sätter både texten och Formen till 45% av behållaren */
+
+.InnehållText {
+width: 45%;
+}
+
+.InnehållForm {
+width: 45%;
+}
+
+/* Använder mig av media för att ändra placering av Formen till mobiler */
+
+@media (max-width: 768px) {
+
+.ContainerFormText {
+ flex-direction: column;
+}
+
+.InnehållText, .InnehållForm {
+width: 100%;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+ <h1> <a href="INDEX.html"> Freya Photos&trade; </a>  </h1>
+ <nav>
+  <ul>
+   <li><a href="Bröllops.html">Bröllop</a></li>
+   <li><a href="Porträtt.html">Porträttfotografering i studio och utomhus</a></li>
+   <li><a href="Ungdoms.html">Ungdoms-Foto</a></li>
+   <li><a href="Boka.html">Boka oss</a></li>
+</ul>
+</nav>
+</header>
+<main>
+
+<div class="ContainerFormText"> <!--Huvudbehållare för texten och Bokningsformuläret -->
+ <div class="InnehållText">  <!--Innehållet för texten-->
+
+ <h2> Om Freya fotos  </h2>
+   <p> Vår studio finns centralt inom Stockholm men vi utför även fotograferingar runt hela Sverige det inkluderar både företag och privatpersoner. Våra fotografer har alla genomgåt fotograferings utbildningar och är extremt kompetenta i hur fotograferingar ska utföras. 
+</p>
+
+ <h2> Bokning hos oss </h2>
+<p>  När ni bokar hos oss får ni flera frågor och förfrågningar som ni kan fylla i, det hjälper oss med att veta både hur ni vill att fotograferingen ska ske, vart, när och vilka era önskemåll är. 
+</p>
+
+<h2> Tider </h2>
+
+<p> Vi har öppet mellan 09.00 - 19.00 på vardagar och 09.00 - 16.00 på helgen. Vi erbjuder såklart fotografering både i studio och hemma under helgen. </p>
+
+ <h2> Priser </h2>
+<p> Prislistan är på ett ungefär och kan variera </p>
+<p> Bröllop </p>
+
+<ul class="Lista"> 
+
+<li> Bröllop 9000. </li>
+ <li> Bröllopsporträtt 1000-1500. </li>
+<li> Halvdagsfotografering 5000-20000. </li>
+<li> Timbaserad fotografering 1000-5000. </li>
+</ul>
+
+<p> Porträttfotografering: </p>
+
+<ul>
+<li> Modellfotografering 2000. </li>
+<li> Idrottsporträtt 1500. </li>
+<li> Fashion fotografering  3000. </li>
+<li> Studentfotografering 1500. </li>
+<li> Körkortsfoto och ID-Kort 500. </li>
+</ul>
+<p> Barn/Ungdom:
+
+<ul>
+<li> Nyföddfotografering 2000. </li>
+<li> Ungdomsbilder 1500. </li>
+<li> Familjebilder 2000.</li>
+<li> Moderskapsbilder 2500. </li>
+</ul>
+
+</div>
+
+ <div class="InnehållForm"> <!--Inehåller bokningsformuläret-->
+  <form>
+   <fieldset> 
+ 
+  <legend> Vilken typ av fotografering ska bokas ? </legend>
+
+<select id="Bokningsalternativ" name="Bokningsalternativ"> <!--En dropdown-lista som innehåller dem olika bokningsalternativen-->
+<option value="Bröllop">Bröllop
+</option>
+<option value="portträt">Porträttfotografering </option>
+<option value="barnfotografering">Barnfotografering </option>
+</select>
+
+<div class="FormBehållare"> <!--Innehåller alla element i formuläret-->
+
+
+<!--Både etiketter och inmatningsfält så användaren kan skriva in den relevanta informationen-->
+
+<label> Email: <br> 
+<input type="text" name="Email"></label><br>
+
+<label> Förnamn: <br> 
+<input type="text" name="För"></label><br>
+
+<label> Efternamn: <br> 
+<input type="text" name="Efter"></label><br>
+
+<label> Datum för fotograferingen <br> 
+<input type="text" name="Datum"></label><br>
+
+<label> Önskemål om tid ? <br> 
+<input type="text" name="Tiden"></label><br>
+
+
+<label> Vart vill du att vi fotograferar <br> 
+<input type="text" name="Platsen"></label><br>
+<p> Förfrågan </p> 
+<textarea name="Förfrågan" rows="6"></textarea>
+
+</div> <!--Avslutar behållaren -->
+
+<button type="submit">Skicka</button> <!-- Används för att skicka formuläret. --> 
+
+</fieldset>
+</form> <!-- Avslutar formuläret -->
+</div>
+</div>
+
+</main>
+<footer>
+ <p>&copy; 2024 Freya Fotos</p>
+ <a href="Boka.html"> Kontakta och gör din bokning här </a>
+<p> Kontakta oss: <br>genom mail Freya.Stockholm@outlook.com eller Telefon 72-529-19-07 </p>
+<p> Öppettider: <br> vardagar 09.00 - 19.00 Helger 09.00 - 16.00;
+</footer>
+
+</body>
+</html>
