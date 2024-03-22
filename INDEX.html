@@ -1,0 +1,131 @@
+<!--Eftersom strukturerna på hemsidorna är ganska lika beskriver jag sidornas grafik i CSS filen. -->
+
+<!DOCTYPE html> <!--typen av dokument = html -->
+<html lang="sv"> <!--Använder språkkoden som är Svenska -->
+<head>
+<meta charset="UTF-8"> <!--Definerar teckenkodningen som hanterar fflera olika språk och deras olika tecken. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ställer in visningsområdet för mobila enheter -->
+<title> Framsida För Freya Av Viktor Linder </title><!-- Sidans titel -->
+<link rel="stylesheet" href="Stilför.css"> <!-- Gör en länk till CSS filen där mycket av grafiken för hemsidorna bestäms -->
+ <!--Jag anväder en style tagg för att hantera dem interna stilarna -->
+<style>
+
+.Mellan { <!-- ställer in bredd och centerar innehåll-->
+padding: 1.2em;
+text-align: center;
+width: 100%;
+}
+
+.Bild-länk:hover img { <!-- Skappar musen hovrar över bilden ändras ljusstyrkan för att lättare märka bilden som en länk eller klickbar yta. --> 
+ filter: brightness(80%);
+}
+
+.Bild-länk img { <!--skappar en övergångseffekt för bilderna--> 
+ transition: filter 0.3s ease-in-out;
+}
+
+h2 { 
+font-size: 3em;<!--Ändrar textens storlek -->
+
+}
+
+ <!-- tillämpar samma storlek på flera olika rubriker-->
+
+h3, h4, h5 {
+font-size: 1em;
+}
+
+</style>
+</head>
+<body>
+<header>  <!-- Använder header elementet för navigerings menyn. -->
+
+ <h1> <a href="INDEX.html"> Freya Photos&trade; </a> <!-- Både länkar och är en titel för huvud sidan -->
+ </h1>
+ <nav>  <!-- Listar upp alla dem olika länkarna till dem olika Fotograferings stilarna. -->
+ 
+  <ul>
+   <li><a href="Bröllops.html">Bröllop</a></li>
+   <li><a href="Porträtt.html">Porträttfotografering i studio och utomhus</a></li>
+   <li><a href="Ungdoms.html">Ungdoms-Foto</a></li>
+   <li><a href="Boka.html"> Om oss</a></li>
+</ul>
+</nav>
+</header>
+<main>
+
+
+<div style="display: flex; align-items: center; justify-content: center; height: auto;"> <!--Använder en fexbox för att bilden ska centreras.-->
+<img src="start.jpg" alt="Fotograf representation för sidans innehåll" style="max-width: 100%;">  <!-- Infogar en bild, den används som en representation av sidans innehåll och bestämmer bredden. -->
+
+</div>
+
+
+<section class="Mellan">  <!-- Avsnitten Del som använder klassen Mellan, För att kunna centrera innehållet och bestämma storlek. -->
+
+<h2> Freya Fotos </h2>  <!-- Rubrik med textinnehåll. -->
+
+<p> Vi erbjuder er toppkvalitet för alla era fotograferingar vare sig det är ett bröllop eller ett vanligt porträtt kan ni alltid förlita er på våra egenskaper. Vår huvudstudie finns i Stockholm men med alternativ för förbestämda platser eller porträtt i hemmet.   </p>
+
+<p> Våra centrala tjänster inkluderar </p>
+</section>  <!--Stänger taggen-->
+
+<div class="Bild-container">  <!--En behållare för bilderna och texten -->
+
+ <figure>
+<a href="Bröllops.html" class="Bild-länk">
+ <img src="Wedding.jpg" alt="En bild på en brud på väg till sitt bröllop, är en länk till bröllopsfotografering.">
+</a>
+ <figcaption><h3>Bröllop </h3>
+  <p> Bröllop är något vi brinner för och vill alltid möta brudparet innan bröllopsdagen för att diskutera detaljer som plats, tid och få en bild av parets relation då detta ökar vår passion och kvaliteten i vårt arbete.   </p>
+
+<p>Vi erbjuder er förberedelser bilder, ceremoni fotografering, porträttsession, gruppfotografering, receptions fotografering, Med möjlighet för album eller fotobok. </p>
+ </figcaption>
+</figure>
+
+ <figure>
+<a href="Porträtt.html" class="Bild-länk">
+ <img src="po.jpg" alt="Porträtt på en kvinna, är en länk till porträttfotografering.">
+</a>
+ <figcaption>  <h4> Porträttfotografering </h4>
+   <p>  Freya ger er skräddarsydda porträttfotografering med alternativ för bildredigering där ni kan ta del för att göra bilderna ännu mer personliga. </p> 
+<p> Vi tar bilderna både i studio och utomhus när ni bokar kommer ni att få välja vilket alternativ som passar er bäst </p>
+ </figcaption>
+</figure>
+
+ <figure>
+ <a href="Ungdoms.html" class="Bild-länk">
+ <img src="barn.jpg" alt="Foto på en mamma som leker med sitt barn, är en länk till Ungdoms Fotografering.">
+</a>
+ <figcaption> <h5> Ungdom fotografering  </h5>
+   <p> Freyas specialiserar sig på naturliga och autentiska barnbilder och gör allt för att era önskningarnas ska bemötas.</p>
+
+<p> Eftersom barn växer så fort så är det viktigt med foton för att minnas deras barndom. Därför är vackra och uttrycksfulla bilder på dina barn så viktiga.
+ </p>
+
+<p> Vi förstår att det kan vara svårt med tider under vardagar och erbjuder därför bokning för helger mellan 
+09.00 till 16.00 för er vars tid är dyrbar. </p>
+</figcaption>
+</figure>
+</div>
+
+
+</main>
+
+<footer> <!--Använder en footer för att visa relevant information längst ner på sidan -->
+
+ <p>&copy; 2024 Freya Fotos</p>  <!--Använder ett copyright märke breddvid titeln-->
+ 
+ <a href="Boka.html"> Kontakta och gör din bokning här </a>  <!--Använder texten som en länk till boknings sidan-->
+
+<p> Kontakta oss: <br>genom mail Freya.Stockholm@outlook.com eller Telefon 72-529-19-07 </p>
+<p> Öppettider: <br> vardagar 09.00 - 19.00 Helger 09.00 - 16.00;
+</footer>
+</body>
+
+
+</html>
+
+<!--Jag använder mig av blockcitat för att a en text breddvid en bild på flera sidor. -->
+
+<!--Jag använder mig även mycket av containers för att organisera innehållet, tilläga styling och separera innehållet för olika sectioner-->

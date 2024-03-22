@@ -1,0 +1,274 @@
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+blockquote {
+ float: right; /* Placerar texten till höger om bilderna */
+
+width: 15em; /* Bestämmer bredden*/
+
+font-style: italic; /* Ger texten kursiv stil*/
+
+font-size: 130%; /* ändrar storleken på texten */
+
+padding: 0.6em;/* Uttfyllnad runtomkring blockcitaten*/
+
+font-family: Georgia, times, serif;/* Ändrar teckensnittet */
+
+margin: 0em 0em 0.6em 0.6em; /* Bestämmer blockcitatets olika marginaler */
+
+line-height: 1.5em; /*ändrar avståndet mellan textens rader*/
+
+}
+
+.blockquote ul{
+
+  list-style-type: none; /* Tar bort punkterna från listan inom blockcitatet */
+
+}
+
+.Förhållandens-container {
+ display: flex; /* Använder flex för att innehållet ska vara flexibelt*/
+
+ flex-wrap: wrap; /* innehållet kommer byta rad när det krävs*/
+}
+
+.Sak1of5, .Sak2of5, .Sak3of5, .Sak4of5, .Sak5of5 {
+flex: 1 1 10%; /* För att göra elementen flexibla och justerbara anges flex för var element.*/
+
+margin: 0.6em; /* ställer in marginalen för varje sak element. */
+
+border-top: 1px solid #000000;/*Ager en border högst upp i elementet */
+
+border-bottom:  1px solid #000000;/*Anger en border längst ner i elementet  */
+
+box-sizing: border-box; /*För att inkludera padding och border i elementets höjd och bredd ställs box-modellen till border-box*/
+
+font-size: 1.3em; /*Anger storleken på texten i elementen */
+
+}
+
+.Bild-container { 
+ display: flex; 
+ flex-wrap: wrap; 
+flex-grow: 1;
+ justify-content: space-between; 
+}
+
+figure {
+/* Använder flexbox */
+flex: 1; 
+
+/* centrerar innehållet */
+text-align: center;
+
+/* Ändrar typssnittet */
+font-family: "Source Sans Pro", sans-serif;
+
+/*Ändrar bakgrunds färgen */
+background-color: #DCDCDC;
+
+/* Sätter en border runt hella figuren */
+ border: 2px solid black;
+  border-radius: 10px;}
+
+
+.Bild-container img {
+/*Anpassar sig för att fylla hella utrymmet */
+width: 100%;
+height: auto;
+}
+
+figcaption {
+/*Ändrar det översta avståndet*/
+margin-top: 0.6em;
+}
+
+body {
+/*Ändrar radavståndet */
+line-height: 2em;
+
+/*Använder flexbox */
+display: flex;
+
+/*Ändrar riktningen inom flex till kolumn */
+flex-direction: column;
+
+/* Sätter den minst acceptabla höjden */
+min-height: 6.25em;
+
+/* sätter avståndet runtom body */
+margin: 3%;
+}
+
+p {
+
+/*Ändrar till kursiv stil */
+font-style: italic;
+
+/*Ändrar typsnittet */
+font-family: "Source Sans Pro", sans-serif;}
+
+header {
+
+/* Centrerar texten */
+text-align: center;
+
+}
+
+
+header h1 {
+
+/*Ändrar textens storlek */
+font-size: 4em;
+
+/*Ändrar färgen på texten */
+color: #ff0000;
+}
+
+h1 a {
+/*Ändrar färgen på texten */
+color: #000000;
+
+/*ändrar typsnittsfamiljen */
+font-family: georgia, times, serif;
+}
+
+
+nav {
+
+/* Centrerar texten*/
+text-align: center;
+
+/* Lägger till en border högst upp och ner */
+border-top: 0.1em solid #000000;
+border-bottom: 0.1em solid #000000;
+
+}
+
+/* Inportant används då andra CSS stilar kan påvärka negativt blir dem överskrivna */
+a:link {
+color: blue !important; 
+text-decoration: none; /* Förhindrar att länkar blir understrykta. */
+}
+
+a:visited {
+color: #000000 !important; /*Även när användaren klickat på länken behålls färgen svart */
+}
+
+a:hover {
+ color: blue !important; /* när användaren har musen över länken ändras färgen till blå. */
+}
+
+nav ul {
+
+/* använder flexbox till sidans layout */
+display: flex;
+
+/* Fördelar jämt utrymmet*/
+justify-content: space-around;
+
+/* Ändrar textens storlek */
+font-size: 2em;
+
+/* Tar bort punkterna från listan */
+list-style: none;
+
+}
+
+
+nav a {
+
+/*Ändrar färgen till svart */
+color: #000000;
+
+/* Tar bort understrycknings färgen för länkar */
+text-decoration: none;
+
+/*Ändrar typsnittet för navigationsmenyns länkar */
+font-family: georgia, times, serif;
+}
+
+
+header a {
+
+/*Gör så hella bredden tas upp */
+display: block;
+}
+
+
+main {
+
+/* Flexbox Använder all tillgänglig plats för main */
+flex: 1;
+
+/* Lägger till padding för main */
+padding: 3em;
+
+}
+
+
+section {
+
+/* Ändrar avståndet för sections */
+margin-bottom: 0.2em;
+}
+
+
+article {
+
+/*Ändrar textens storlek */
+font-size: 1.5em;
+
+/*Ändrar textens radavstånd */
+line-height: 1em;
+}
+
+footer {
+
+/*Svart färg */
+color: #000000;
+
+/* Ändrar bakgrundets färg */
+background-color: #ffe6e6;
+
+/*Ställer in padding och storlek på text */
+font-size: 120%;
+padding: 1em;
+
+
+}
+
+.Huvud {
+
+/*Ändrar bakgrunds färg */
+background-color: #ffcccc;
+}
+
+/*För att anpassa bredd och storlek för olika enheter används media när skärmstorleken är under en vis procent. */
+@media screen and (max-width: 768px) {
+
+
+ p {
+ font-size: 100%;
+}
+
+h1 {
+ font-size: 100% ;
+}
+
+nav ul {
+font-size: 100%;
+
+}
+
+main {
+padding: 2em;
+}
+
+header h1 {
+font-size: 2em;
+}
+}
